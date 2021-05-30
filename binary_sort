@@ -1,0 +1,20 @@
+def bisextion_search(L,T):
+  def bisection_search_helper(L,T,low,high):
+    if high == low:
+      return L[low] == T
+    mid = (high + low)//2
+    if L[mid] == T:
+      return True
+    elif L[mid]> T:
+      if low == mid:
+        return False
+      else:
+        return bisection_search_helper(L, T, low, mid-1)
+    else:
+      return bisection_search_helper(L, T, mid+1, high)
+    
+    if len(L) == 0:
+      return False
+    else:
+      return bisection_search_helper(L, T, 0, len(L)-1)
+
