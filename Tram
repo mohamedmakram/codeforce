@@ -1,0 +1,8 @@
+stops = int(input())
+capacity = 0
+min_capacity = []
+for i in range(stops):
+  exit, enter = map(int, input().split())
+  capacity += enter - exit
+  min_capacity.append(capacity)
+print(max(min_capacity))
