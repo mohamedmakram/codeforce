@@ -1,0 +1,13 @@
+def Bear_Big_Brother(Limak, Bob):
+''' this function to find out how many years it will take Limak to be heavier than his big brother Bob who is'''
+  limak = Limak
+  bob = Bob
+  count = 0
+  while limak <= bob:
+    limak *=   3
+    bob *=  2
+    count += 1
+  return count
+limak, bob = map(int,input().split())
+x = Bear_Big_Brother(limak, bob)
+print(x)
