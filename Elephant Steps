@@ -1,0 +1,21 @@
+position = int(input())
+count = 0
+for i in range(position):
+  if (position - 5) >= 0:
+    position = position - 5
+    count += 1
+  elif (position - 4) >=0:
+    position = position - 4
+    count += 1
+  elif (position - 3) >= 0:
+    position = position - 3
+    count += 1
+  elif (position - 2) >= 0:
+    position = position - 2
+    count += 1
+  else:
+    if (position - 1) == 0:
+      count += 1
+      break
+      
+print(count)
