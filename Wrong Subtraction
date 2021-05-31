@@ -1,0 +1,14 @@
+def wrong_subtraction(given, times):
+  for i in range(times):
+    if given% 10 == 0:
+      given = given // 10
+    elif given == 1:
+      return given
+    else:
+      given -= 1
+  return given
+
+  
+given, times = map(int, input().split())
+tanya_algorithm = wrong_subtraction(given, times)
+print(tanya_algorithm)
