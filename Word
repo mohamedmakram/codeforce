@@ -1,0 +1,12 @@
+word = input()
+upper = ''
+lower = ''
+for i in word:
+  if i.isupper():
+    upper += i
+  else:
+    lower += i
+if len(upper) > len(lower):
+  print(word.upper())
+else:
+  print(word.lower())
