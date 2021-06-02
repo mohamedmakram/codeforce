@@ -1,0 +1,7 @@
+# slice the string of input ot get just the number of times you want to swap 'BG' to 'GB' and ignore the length of the queue
+N = int(input()[2:])
+Q = input()
+while N:
+  Q = Q.replace('BG','GB')
+  N -= 1
+print(Q)
